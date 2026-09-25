@@ -1,0 +1,36 @@
+"""
+ขอให้นิสิตพัฒนาโปรแกรมด้วยภาษา python บน 2 โจทย์ดังกล่าว โดยอให้สร้างไฟล์ใหม่ใน folder นั้น สำหรับแต่ละโจทย์
+bmi-calculator.py
+currency-conteror.py
+ทำการ commit และ push โค้ดกลับไปที่ repo ของตนเอง และส่งงาน (turn in) เป็น link repo ใน folder ของตนเอง
+
+** ตัวอย่างการใช้คำสั่ง if-elif-else **
+if bmi == 1:
+    print("BMI 1")
+elif bmi == 2:
+    print("BMI 2")
+elif bmi == 3:
+    print("BMI 3")
+else:
+    print("BMI 4")
+"""
+
+#input
+weight = float(input("Enter your weight (kg): "))
+height = float(input("Enter your height (m): "))
+
+#process
+bmi = weight / (height ** 2)
+
+if bmi < 18.5:
+    category = "Under weight"
+elif bmi < 25:
+    category = "Normal weight"
+elif bmi < 30:
+    category = "Over weight"
+else:
+    category = "Obese"
+
+#output
+print(f"BMI = {bmi:.1f}")
+print("category:", category)
