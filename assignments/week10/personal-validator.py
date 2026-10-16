@@ -45,7 +45,7 @@ check_age = False
 if 18 <= age <= 65:
     check_age = True
 
-check_name = False
+check_phone = False
 if phone.isdigit() and len(phone) == 10:
     check_phone = True
 
